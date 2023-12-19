@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>JS   Lingkaran</title>
+</head>
+
+<body>
+
+    <h1>Menghitung Luas & Keliling Lingkaran</h1>
+    <p>Luas lingkaran = phi * r * r</p> 
+    <p>Keliling Lingkaran = 2 * phi * r</p>
+    <form action="">
+        <label for="jari2"> Masukan Jari-Jari = </label>
+        <input type="number" name="jari2" id="jari2" min="1" onchange="Lingkaran()">
+    </form>
+
+    <p>Luas Lingkaran =<span id="luas"></span> </p>
+    <p>Keliling Lingkaran <span id="keliling"></span></p>
+
+    <script>
+        function Lingkaran() {
+            let r = parseFloat(document.getElementById("jari2").value) || 0;
+
+            console.log("jari2" + luas)
+            console.log ("keliling" + keliling)
+
+            let LuasLingkaran = Math.PI * r * r;
+            let KelilingLingkaran = 2 * Math.PI * r ;
+
+            document.getElementById("luas").innerHTML = LuasLingkaran.toFixed(2); 
+            document.getElementById("keliling").innerHTML = KelilingLingkaran.toFixed(2);
+        }
+
+</script>
+
+</body>
+
+</html>
